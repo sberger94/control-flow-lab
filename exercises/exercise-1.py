@@ -14,10 +14,10 @@
 letter = input("Please enter a letter from the alphabet (a-z or A-Z): ")
 vowels = ['a', 'e', 'i', 'o', 'u']
 
-if len(letter) == 1:
+if len(letter) == 1 and letter.isalpha():
     if letter.lower() in vowels:
         print(f"The letter {letter} is a vowel")
     else:
         print(f"The letter {letter} is a consonant")
 else:
-    print("You didn't enter a single letter!")
+    print("You didn't enter a valid letter!")
